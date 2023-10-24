@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Worker Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Worker Management</h1>
+
+        <div class="input-section">
+            <h2>Add/Update Worker</h2>
+            <input type="text" id="workerId" placeholder="ID">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="text" id="gender" placeholder="Gender">
+            <input type="text" id="typeOfJob" placeholder="Type of Job">
+            <input type="text" id="salary" placeholder="Salary">
+            <button onclick="addOrUpdateWorker()">Add/Update</button>
+        </div>
+
+        <div class="action-buttons">
+            <button onclick="displayWorkers()">Show Workers</button>
+            <button onclick="getWorkerById()">Get Worker By ID</button>
+            <button onclick="deleteWorker()">Delete Worker By ID</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
